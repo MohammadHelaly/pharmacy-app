@@ -20,7 +20,7 @@ const AuthNavigator = () => {
 			{!isLoggedIn ? (
 				<Stack.Screen name="Login" component={LoginScreen} />
 			) : (
-				<Stack.Screen name="Requests" component={AppNavigator} />
+				<Stack.Screen name="Management" component={AppNavigator} />
 			)}
 		</Stack.Navigator>
 	);

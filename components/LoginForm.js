@@ -38,7 +38,7 @@ const LoginForm = (props) => {
 				"Authorization"
 			] = `Bearer ${data.data.token}`;
 			Alert.alert("Success!");
-			navigation.navigate("Requests");
+			navigation.navigate("Management");
 		},
 		onError: (error) => {
 			Alert.alert("Something went wrong!", "Please try again.", [

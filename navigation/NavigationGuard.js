@@ -13,10 +13,6 @@ const NavigationGuard = (props) => {
 		if (!guardWhileLoggedIn && !isLoggedIn) {
 			navigation.navigate("Login");
 		}
-
-		if (guardWhileLoggedIn && isLoggedIn) {
-			navigation.navigate("Pharmacies");
-		}
 	}, [isLoggedIn, navigation]);
 
 	if (!guardWhileLoggedIn && !isLoggedIn) return null;
